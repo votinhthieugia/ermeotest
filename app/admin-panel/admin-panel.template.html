@@ -1,0 +1,76 @@
+<div class="col-xs-1 menu">
+  <div>
+    <ul class="list-inline">
+      <li ng-repeat="category in $ctrl.categories" class="category" ng-click="$ctrl.setCategory(category.id)">
+        <div class="icon"><img ng-src="{{ category.iconUrl }}" /></div>
+        <div class="title">{{ category.title }}</div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="col-xs-11 main" ng-if="$ctrl.aDocument != null">
+  <div class="col-xs-4 document-list">
+    <div class="col-xs-12 search-bar">
+      <div class="col-xs-2"><img src="img/icons/previous.png" /></div>
+      <div class="col-xs-8"><input ng-model="$ctrl.query" /></div>
+      <div class="col-xs-2"><img src="img/icons/search.png" /></div>
+    </div>
+    <ul class="list-inline col-xs-12">
+      <li class="col-xs-12" ng-repeat="document in $ctrl.aDocument.documentModel | filter:$ctrl.query">
+        <div class="col-xs-12 document" ng-click="$ctrl.setDocument(document._id)">
+          <div class="col-xs-2"><img src="img/icons/literature.png" /></div>
+          <div class="col-xs-8">
+            {{ document.title }}
+            <div>{{ document.content.length }} etaps</div>
+          </div>
+          <div class="col-xs-2"><img src="img/icons/next.png" /></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="col-xs-8 detail">
+    <div class="col-xs-12 message-bar">
+    </div>
+    <div class="clear"></div>
+    <div class="header">
+      <div class="info col-xs-8">
+        <div class="doc-title">{{ $ctrl.currentDocument.title }}</div>
+        <div class="asset">{{ $ctrl.currentDocument.assets.length > 0? $ctrl.currentDocument.assets[0].name: 'N/A' }}</div>
+        <div class="col-xs-3 num-items">
+          {{ $ctrl.currentDocument.content.length }}
+          <div class="number-title">Etaps</div>
+        </div>
+        <div class="col-xs-3 duration">
+          {{ $ctrl.formatDuration($ctrl.currentDocument.duration) }}
+          <div class="number-title">Duree</div>
+        </div>
+      </div>
+      <div class="map col-xs-4"><img src="/img/icons/map.png" /></div>
+    </div>
+    <div class="task-content">
+      <div class="col-xs-6 task-list">
+        <ul class="col-xs-12">
+          <li class="col-xs-12 task" ng-repeat="task in $ctrl.currentDocument.content track by $index">
+            <div class="col-xs-2 task-position">{{ $index + 1 }}</div>
+            <div class="col-xs-8 task-title">
+              Task {{ task.positionText }}
+              <div class="task-text">{{ task.text }}</div>
+            </div>
+            <div class="col-xs-2 task-next"><img src="img/icons/next.png" /></div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-6 task-detail" ng-if="$ctrl.currentDocument.content.length > 0">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+          <div class="top-description">Premier buteur de l’Euro, vendredi soir face à la Roumanie (2-1), Olivier Giroud, objet de nombreuses critiques lors des matchs de préparation, a affiché samedi à Clairefontaine (Yvelines) son soulagement teinté de satisfaction.</div>
+          <div class="image-description"><img src="img/icons/task.png" /></div>
+          <div class="bottom-description">Pour un attaquant, c’est toujours important de marquer. Je continue ma série (Ndlr : 8 buts lors de six dernières titularisations en sélection), observe-t-il. Mes chiffres parlent d’eux mêmes. Je suis sans doute meilleur dans l’adversité. Mais je n’ai pas envie de me battre contre les médisants. Je suis surtout fier d’avoir aidé mon équipe à remporter ce match </div>
+        </div>
+        <div class="col-xs-1"></div>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div class="clear"></div>

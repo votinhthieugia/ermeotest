@@ -1,0 +1,5 @@
+[
+  { "id": 1, "type": "table", "name": "bla" },
+  { "id": 2, "type": "table", "name": "blo" },
+  { "id": 3, "type": "chair", "name": "bimbim" }
+]

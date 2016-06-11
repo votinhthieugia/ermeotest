@@ -1,0 +1,50 @@
+[
+  { 
+    "id": 1,
+    "iconUrl": "img/icons/dashboard.png", 
+    "title": "Aujourd'hui",
+    "dataUrl": ""
+  },
+  { 
+    "id": 2,
+    "iconUrl": "img/icons/calendar_1.png", 
+    "title": "Intervention",
+    "dataUrl": ""
+  },
+  { 
+    "id": 3,
+    "iconUrl": "img/icons/bookmark.png", 
+    "title": "Manuels",
+    "dataUrl": "http://preprod.worker.ermeo.com/publications/documentModelHttp"
+  },
+  { 
+    "id": 4,
+    "iconUrl": "img/icons/maintenance.png", 
+    "title": "Equipments",
+    "dataUrl": ""
+  },
+  { 
+    "id": 5,
+    "iconUrl": "img/icons/location.png", 
+    "title": "Tournees",
+    "dataUrl": ""
+  },
+  { 
+    "id": 6,
+    "iconUrl": "img/icons/document.png", 
+    "title": "Rapports",
+    "dataUrl": ""
+  },
+  { 
+    "id": 7,
+    "iconUrl": "img/icons/comments.png", 
+    "title": "Commentaires",
+    "dataUrl": ""
+  },
+  { 
+    "id": 8,
+    "iconUrl": "img/icons/settings.png", 
+    "title": "Reaglaces",
+    "dataUrl": ""
+  }
+]

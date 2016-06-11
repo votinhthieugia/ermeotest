@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" ng-app='ermeoTestApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>My HTML File</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/category/category.module.js"></script>
+    <script src="core/category/category.service.js"></script>
+    <!--script src="core/document/document.module.js"></script>
+    <script src="core/document/document.service.js"></script-->
+
+    <script src="core/thing/thing.module.js"></script>
+    <script src="core/thing/thing.service.js"></script>
+
+    <script src="thing-list/thing-list.module.js"></script>
+    <script src="thing-list/thing-list.component.js"></script>
+
+    <script src="admin-panel/admin-panel.module.js"></script>
+    <script src="admin-panel/admin-panel.component.js"></script>
+  </head>
+  <body>
+
+    <div ng-view></div>
+
+  </body>
+</html>

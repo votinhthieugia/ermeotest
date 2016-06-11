@@ -1,0 +1,127 @@
+.body {
+  padding:0;
+  margin:0;
+}
+
+.menu {
+  background-color:#c7c7c7;
+  margin:0 auto;
+}
+
+.clear {
+  clear:both;
+}
+
+.categories {
+  margin:20px auto;
+  padding:20px 0;
+}
+
+ul, li {
+  display:inline;
+}
+
+.categories ul, li img {
+  width:50px;
+}
+
+li.category {
+  display:inline;
+}
+
+.icon {
+  width:100%;
+  text-align:center;
+}
+
+.title {
+  text-align:center;
+}
+
+.main {
+  padding:0;
+  margin:0;
+}
+
+.search-bar, .message-bar {
+  background:#E77814;
+  height:40px;
+}
+
+.search-bar input {
+  background:#E77814;
+  width:100%;
+  border:none;
+}
+
+.search-bar img {
+  width:80%;
+}
+
+.document-list, .detail,
+ul.document-list {
+  margin:0;
+  padding:0;
+}
+
+.document {
+  height:40px;
+  margin:10px 0;
+  font-size:12px;
+}
+
+.document img {
+  width:70%;
+}
+
+.header {
+  border-radius:5px;
+  height:200px;
+  background: #323b46;
+  margin:10px 5px;
+}
+
+.doc-title {
+  margin:10px 0;
+  color:white;
+}
+
+.asset {
+  color:#c7c7c7;
+  margin:10px 0 20px;
+}
+
+.num-items,
+.duration {
+  color:white;
+  margin:10px 0;
+}
+
+.number-title {
+  color:#c7c7c7;
+}
+
+.map {
+  margin:20px 0;
+}
+
+.task {
+  margin:10px 0;
+}
+
+.task-position {
+  font-size:12px;
+  color:#c7c7c7;
+}
+
+.task-text {
+  color:#393939;
+  font-size:11px;
+}
+
+.task-next img {
+  width:70%;
+}
+
+.task-detail {
+}
